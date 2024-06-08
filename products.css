@@ -1,0 +1,449 @@
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+h1{
+  font-size: 3rem;
+  text-align: center;
+  color: var(--bg);
+  margin-bottom: 6rem;
+  background: var(--color);
+  padding: 5px 0 15px 0;
+  border: 5px solid var(--color2);
+  border-radius: 20px;
+  box-shadow: var(--box);
+}
+
+img{
+  width: 580px;
+  border-radius: 20px;
+  box-shadow: 0 0 1rem rgb(0 0 0 / .3);
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 3rem;
+}
+
+.price{
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.7rem;
+  padding: 20px 0;
+  color: var(--color);
+  border-top: 2px solid var(--color);
+  border-bottom: 2px solid var(--color);
+  margin: 0 20rem;
+}
+
+.purchase{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 6.9rem;
+}
+
+.purchase button{
+  width: 120px;
+  border: none;
+  background: var(--color);
+  color: var(--bg);
+  font-size: 1.15rem;
+  padding: 10px 20px;
+  box-shadow: 0 0 .5rem rgb(0 0 0 / .5);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.purchase button:hover{
+  opacity: .8;
+}
+
+.purchase button:first-child{
+  margin-right: 2rem;
+}
+
+footer{
+  text-align: center;
+  background: var(--color);
+  font-size: 1.2rem;
+  color: var(--bg);
+  padding: 20px 0;
+  border: 5px solid var(--color2);
+  border-radius: 20px;
+  box-shadow: var(--box);
+}
+
+dialog{
+  margin-top: 25%;
+  margin-left: 50%;
+  transform: translate(-50%, -25%);
+  border: none;
+  outline: none;
+  background: none;
+  border-radius: 18px;
+  box-shadow: var(--box);
+}
+
+dialog::backdrop{
+  background: rgba(0, 0, 0, 0.461);
+}
+
+dialog .form{
+  padding: 30px 40px;
+  background: var(--color2);
+}
+
+dialog .form h2{
+  text-align: center;
+  color: var(--color);
+  margin-bottom: 17px;
+}
+
+dialog .form input:not([type="submit"]){
+  width: 330px;
+  margin-bottom: 18px;
+  font-size: 1rem;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background: var(--bg);
+  color: var(--color);
+  font-weight: 500;
+}
+
+.opt{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.opt button{
+  margin-right: 15px;
+}
+
+dialog .form input[type="submit"], .opt button{
+  font-size: 1rem;
+  background: var(--bg);
+  border: none;
+  color: var(--color);
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+:is(dialog .form input[type="submit"], .opt button):hover{
+  opacity: .8;
+}
+
+@media(max-width: 1440px) and (min-width: 1024px){
+  h1{
+    font-size: 1.8rem;
+    border-radius: 15px;
+    margin-bottom: 6rem;
+  }
+
+  img{
+    width: 430px;
+    margin-bottom: 2rem;
+  }
+
+  .price{
+    font-size: 1.3rem;
+    padding: 13px 0;
+    margin: 0 10rem;
+  }
+
+  .purchase button{
+    width: 100px;
+    font-size: 1rem;
+  }
+
+  footer{
+    font-size: 1rem;
+    padding: 13px 0;
+    border-radius: 15px;
+  }
+
+  dialog{
+    margin-top: 20%;
+    margin-left: 50%;
+    transform: translateY(-50%, -20%);
+  }
+
+  dialog .form{
+    padding: 20px 30px;
+  }
+
+  dialog .form h2{
+    font-size: 1.3rem;
+  }
+
+  dialog .form input:not([type="submit"]){
+    font-size: .9rem;
+    width: 300px;
+    padding: 5px 10px;
+  }
+
+  dialog .form input:not([type="submit"])::placeholder{
+    font-size: .85rem;
+  }
+
+  dialog .form input[type="submit"], .opt button{
+    font-size: .8rem;
+  }
+}
+
+@media(max-width: 1024px) and (min-width: 768px){
+  h1{
+    font-size: 1.5rem;
+    border-radius: 13px;
+    margin-bottom: 5rem;
+  }
+
+  img{
+    width: 380px;
+  }
+
+  .price{
+    font-size: 1.1rem;
+    padding: 10px 0;
+    margin: 0 10rem;
+  }
+
+  .purchase{
+    margin-bottom: 5rem;
+  }
+
+  .purchase button{
+    width: 75px;
+    font-size: .8rem;
+  }
+
+  footer{
+    font-size: .9rem;
+    padding: 10px 0;
+    border-radius: 13px;
+  }
+
+  dialog{
+    margin-top: 25%;
+    margin-left: 50%;
+    transform: translateY(-50%, -25%);
+  }
+
+  dialog .form{
+    padding: 20px 25px;
+  }
+
+  dialog .form h2{
+    font-size: 1.2rem;
+  }
+
+  dialog .form input:not([type="submit"]){
+    font-size: .8rem;
+    width: 280px;
+    padding: 4px 10px;
+    border-radius: 8px;
+    margin-bottom: 0.9rem;
+  }
+
+  dialog .form input:not([type="submit"])::placeholder{
+    font-size: .75rem;
+  }
+
+  dialog .form input[type="submit"], .opt button{
+    font-size: .7rem;
+  }
+}
+
+@media(max-width: 768px) and (min-width: 425px){
+  h1{
+    font-size: 1.4rem;
+    border-radius: 13px;
+    margin-bottom: 3.5rem;
+  }
+
+  img{
+    width: 330px;
+  }
+
+  .price{
+    font-size: 1rem;
+    padding: 8px 0;
+    margin: 0 5rem;
+  }
+
+  .purchase{
+    margin-bottom: 4rem;
+  }
+
+  .purchase button{
+    width: 65px;
+    font-size: .7rem;
+  }
+
+  footer{
+    font-size: .8rem;
+    padding: 8px 0;
+    border-radius: 13px;
+  }
+
+  dialog{
+    margin-top: 25%;
+    margin-left: 50%;
+    transform: translateY(-50%, -25%);
+  }
+
+  dialog .form{
+    padding: 10px 15px;
+  }
+
+  dialog .form h2{
+    font-size: 1.1rem;
+  }
+
+  dialog .form input:not([type="submit"]){
+    font-size: .75rem;
+    width: 270px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    margin-bottom: .85rem;
+  }
+
+  dialog .form input[type="submit"], .opt button{
+    font-size: .67rem;
+  }
+}
+
+@media(max-width: 425px) and (min-width: 375px){
+  body{
+    margin-top: 1.2rem;
+  }
+
+  h1{
+    font-size: 1.2rem;
+    border-radius: 13px;
+    margin-bottom: 4.3rem;
+  }
+
+  img{
+    width: 270px;
+  }
+
+  .price{
+    font-size: .8rem;
+    padding: 6px 0;
+    margin: 0 2rem;
+  }
+
+  .purchase button{
+    width: 63px;
+    font-size: .6rem;
+  }
+
+  footer{
+    font-size: .7rem;
+    padding: 6px 0;
+    border-radius: 13px;
+  }
+
+  dialog{
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translateY(-50%, -50%);
+    border-radius: 13px;
+  }
+
+  dialog .form{
+    padding: 10px 15px;
+  }
+
+  dialog .form h2{
+    font-size: 1.1rem;
+  }
+
+  dialog .form input:not([type="submit"]){
+    font-size: .7rem;
+    width: 250px;
+    padding: 3px 10px;
+    border-radius: 5px;
+    margin-bottom: .75rem;
+  }
+
+  dialog .form input[type="submit"], .opt button{
+    font-size: .65rem;
+  }
+}
+
+@media(max-width: 375px) and (min-width: 320px){
+  body{
+    margin-top: 1.4rem;
+  }
+
+  h1{
+    font-size: 1rem;
+    border-radius: 10px;
+    margin-bottom: 5rem;
+  }
+
+  img{
+    width: 230px;
+  }
+
+  .price{
+    font-size: .7rem;
+    padding: 5px 0;
+    margin: 0;
+  }
+
+  .purchase{
+    margin-bottom: 4.8rem;
+  }
+
+  .purchase button{
+    width: 60px;
+    font-size: .5rem;
+  }
+
+  footer{
+    border-radius: 10px;
+    padding: 6px 0;
+    font-size: .7rem;
+  }
+
+  dialog{
+    margin-top: 70%;
+    margin-left: 50%;
+    transform: translateY(-50%, -70%);
+    border-radius: 13px;
+  }
+
+  dialog .form{
+    padding: 10px 15px;
+  }
+
+  dialog .form h2{
+    font-size: 1rem;
+  }
+
+  dialog .form input:not([type="submit"]){
+    font-size: .7rem;
+    width: 230px;
+    padding: 3px 10px;
+    border-radius: 5px;
+    margin-bottom: .6rem;
+  }
+
+  dialog .form input:not([type="submit"])::placeholder{
+    font-size: .7rem;
+  }
+
+  dialog .form input[type="submit"], .opt button{
+    font-size: .57rem;
+    padding: 3px 8px;
+  }
+}

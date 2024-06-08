@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+  --color: #4E352E;
+  --color2: #AA8F76;
+  --bg: #D5C7BC;
+  --transition: all 250ms ease-in;
+  --transition2: all 500ms ease-in;
+  --box: 0 0 1rem rgba(0, 0, 0, .8);
+}
+
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body{
+  font-family: 'Exo 2', 'Arial';
+  background: var(--bg);
+  padding: 35px 30px;
+}
+
+::-webkit-scrollbar{
+  border: 0;
+}
